@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Reset dan Font Dasar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 12px;
+    color: #424242;
+    background-color: #abccb7; 
+}
+.wrapper {
+        background-color: #f8f8f8;
+}
+.restaurant-item {
+    background-color: #ffffff;
+}
+
+/* Navigasi Mobile */
+.mobile-menu, .mobile-nav, .desktop-nav {
+    background-color: #436850;
+    color: white !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0px;
+    margin-right: 10px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+/* Hamburger Button */
+.menu-icon {
+    min-width: 44px;
+    min-height: 44px;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu-icon:focus {
+    outline: 2px solid blue; /* or any other focus indicator style */
+}
+
+
+/* Logo */
+.site-logo, .mobile-logo {
+    cursor: default;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-nav-list, .desktop-nav-list {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 60%;
+}
+
+.mobile-nav-item, .desktop-nav-item, .menu-icon a, .mobile-nav a, .desktop-nav a {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    text-align: right;
+    line-height: 4px;
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    padding: 1.3em;
+}
+
+.mobile-nav-item a {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* Jumbotron Section */
+.jumbotron {
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-color: black !important;
+}
+
+.jumbotron-inner {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.jumbotron-title, .jumbotron-subtitle {
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 1px 1px #141414;
+}
+
+.jumbotron-title {
+    font-size: 46px;
+}
+
+.jumbotron-subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Konten Utama */
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* Bagian Penjelajah Restoran */
+.restaurant-explorer {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.restaurant-explorer h1 {
+    font-weight: 600;
+    font-size: 2.3em;
+    font-family: poppins;
+    margin-bottom: 5px;
+}
+
+/* Daftar Restoran */
+.restaurant-list {
+    margin: 32px auto auto;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-row-gap: 16px;
+}
+
+.restaurant-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.restaurant-item:hover {
+    transform: scale(1.05);
+}
+
+.restaurant-location {
+    position: absolute;
+    top: 160px;
+    right: 16px;
+    border-radius: 5px;
+    background-color: #5F6F52;
+    padding: 5px 20px 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.restaurant-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.restaurant-info {
+    padding: 2px;
+    flex: 1;
+}
+
+.restaurant-rating, .rating-value, .restaurant-description {
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.rating-value {
+    min-width: 44px;
+    min-height: 44px;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;}
+
+.restaurant-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.restaurant-name:hover {
+    opacity: 0.5;
+
+}
+
+.restaurant-name, .restaurant-description {
+    color: inherit;
+    font-size: 18px;
+}
+
+a{
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+/* Footer */
+footer {
+    background-color: #436850;
+    color: white;
+    font-size: 14px;
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+/* Skip Link */
+.skip-to-content {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-block;
+}
+
+.skip-to-content:focus {
+    top: 100px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 500px) {
+    .main-content {
+        padding: 30px;
+    }
+
+    .mobile-menu, .mobile-nav {
+        display: none;
+    }
+
+    a {
+        display: inline-block;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .desktop-nav {
+        display: none;
+        justify-content: flex-start;
+    }
+
+    .mobile-nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        transform: translate(-100%, 0);
+        transition: transform 0.3s ease;
+    }
+
+    .open {
+        transform: translate(0, 0);
+    }
+
+    .mobile-nav-item {
+        display: list-item;
+        color: black !important;
+        width: 100%;
+        text-align: left;
+    }
+
+    a {
+        display: inline-block;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .main-content {
+        padding: 40px;
+    }
+
+    .restaurant-info {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .restaurant-name {
+        font-size: 18px;
+    }
+
+    .restaurant-description {
+        font-size: 14px;
+    }
+
+    a {
+        display: inline-block;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+
+    a {
+        display: inline-block;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main-content {
+        padding: 50px;
+    }
+
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    a {
+        display: inline-block;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+
+    .main-content {
+        padding: 65px; /* Padding untuk layar besar */
+    }
+
+    .jumbotron {
+        background-image: url('../public/images/heros/hero-image_4.jpg');
+        min-width: 1000px;
+    }
+
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    a {
+        display: inline-block;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .mobile-nav {
+        z-index: 10;
+        background-color: #436850;
+        width: 100%;
+        position: absolute;
+        transform: translate(-100%, 0);
+        transition: transform 0.3s ease;
+    }
+
+    .open {
+        transform: translate(0, 0);
+    }
+
+    .mobile-nav-item {
+        display: list-item;
+        color: black !important;
+        width: 100%;
+        text-align: left;
+    }
+
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+    }
+
+    a {
+        display: inline-block;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}

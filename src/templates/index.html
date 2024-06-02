@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTOKU</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#contentMain" class="skip-to-content">Skip to content</a>
+<header>
+    <!-- Mobile Navbar -->
+    <div class="mobile-menu">
+        <button class="menu-icon" id="mobileNavToggle" aria-label="Toggle navigation">☰</button>
+        <div class="mobile-logo">RESTOKU</div>
+        <div class="mobile-logo"> </div>
+    </div>
+    <nav id="mobileDrawer" class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="/">Home</a></li>
+            <li class="mobile-nav-item"><a href="#">Favorites</a></li>
+            <li class="mobile-nav-item"><a target="_blank" href="https://www.linkedin.com/in/dinarahmaprasilda/">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Desktop Navbar -->
+    <nav class="desktop-nav">
+        <a class="site-logo">RESTOKU</a>
+        <ul class="desktop-nav-list">
+            <li class="desktop-nav-item"><a href="/">Home</a></li>
+            <li class="desktop-nav-item"><a href="#">Favorites</a></li>
+            <li class="desktop-nav-item"><a target="_blank" href="https://www.linkedin.com/in/dinarahmaprasilda/">About Us</a></li>
+        </ul>
+    </nav>
+</header> 
+    <main id="contentMain">
+
+    <!-- Jumbotron -->
+        <div class="jumbotron" style="background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('images/heros/hero-image_4.jpg');">
+            <div class="jumbotron-inner">
+                <h1 class="jumbotron-title">RESTOKU</h1>
+                <p class="jumbotron-subtitle">Discover the finest dining experiences on our curated platform.</p>
+            </div>
+        </div>
+        
+    <!-- Main Content -->
+        <section class="main-content">
+            <div class="restaurant-explorer">
+                <h1>DISCOVER RESTAURANTS</h1>
+                <div class="restaurant-list" id="restaurantContainer">
+                    <!-- Restaurant items will be populated here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>Copyright © 2024 - RestoKu</p>
+    </footer>
+    
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
